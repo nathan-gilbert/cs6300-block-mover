@@ -34,7 +34,7 @@ int depth_value = DEFAULT_VALUE;
 int nodes_expanded = 0;
 int nodes_generated = 0;
 int solution_length = 0;
-vector<vector<char>> goal(11);
+vector<vector<char> > goal(11);
 
 char *Usage = "[OPTIONS...] <startup_file>";
 struct poptOption OptionsTable[] = {
@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
   int arg;
   int argpt = 0;
   float search_efficiency = 0.0;
-  vector<vector<char>> initial(11);
+  vector<vector<char> > initial(11);
 
   PoptContext = poptGetContext(NULL, argc, (const char **)argv, OptionsTable,
                                POPT_CONTEXT_POSIXMEHARDER);

@@ -14,7 +14,7 @@ Node::Node() {
   depth = 0;
 }
 
-Node::Node(vector<vector<char>> s) {
+Node::Node(vector<vector<char> > s) {
   backpath = "";
   state = s;
   estimate = 0;
@@ -24,7 +24,7 @@ Node::Node(vector<vector<char>> s) {
   depth = 0;
 }
 
-Node::Node(vector<vector<char>> s, string path, Node p) {
+Node::Node(vector<vector<char> > s, string path, Node p) {
   backpath = path;
   state = s;
   estimate = 0;
@@ -41,7 +41,7 @@ Node::Node(vector<vector<char>> s, string path, Node p) {
   }
 }
 
-Node::Node(vector<vector<char>> s, string path) {
+Node::Node(vector<vector<char> > s, string path) {
   backpath = path;
   state = s;
   cost = 0;
@@ -115,11 +115,11 @@ void Node::prettyPrint(int tables, bool final, bool heur) {
  * Many accessor methods follow, they do just as they
  * say. Either set's or get's.
  */
-vector<vector<char>> Node::getState() { return state; }
+vector<vector<char> > Node::getState() { return state; }
 
 Node *Node::getParent() { return parent; }
 
-void Node::updateState(vector<vector<char>> s) { state = s; }
+void Node::updateState(vector<vector<char> > s) { state = s; }
 
 string Node::getMove() { return backpath; }
 

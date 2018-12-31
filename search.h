@@ -19,7 +19,7 @@ void getAltF(Node &);
 bool aStarSearch(Node i);
 
 /* Globals */
-extern vector<vector<char>> goal;
+extern vector<vector<char> > goal;
 extern int depth_value;
 extern int blocks;
 extern int tables;

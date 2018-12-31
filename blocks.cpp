@@ -18,7 +18,7 @@ int min(int x, int y) { return (x < y ? x : y); }
  * This is done in moveblocks.cpp.
  */
 bool readInit(const char *inFile, int &tables, int &blocks,
-              vector<vector<char>> &is, vector<vector<char>> &gs) {
+        vector<vector<char> > &is, vector<vector<char> > &gs) {
   ifstream in;
   string line, buf;
   int table = -1;
@@ -136,7 +136,7 @@ bool readInit(const char *inFile, int &tables, int &blocks,
  * been correctly parsed and read from file. This function is only called once
  * per run.
  */
-void printInit(vector<vector<char>> is, vector<vector<char>> gs) {
+void printInit(vector<vector<char> > is, vector<vector<char> > gs) {
   string buf = "";
   int b = 0;
   int level = 0;

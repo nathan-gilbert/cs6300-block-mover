@@ -91,8 +91,8 @@ void printSolution(Node n) {
  * Generates all successors of node c and put them in vector s.
  */
 void getSuccessors(Node c, vector<Node> &s) {
-  vector<vector<char>> main;
-  vector<vector<char>> temp;
+  vector<vector<char> > main;
+  vector<vector<char> > temp;
   string move = "Moved block ";
   char num[10];
   main = c.getState();

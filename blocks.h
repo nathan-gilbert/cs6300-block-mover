@@ -18,13 +18,13 @@
 
 using namespace std;
 
-bool readInit(const char *, int &, int &, vector<vector<char>> &,
-              vector<vector<char>> &);
+bool readInit(const char *, int &, int &, vector<vector<char> > &,
+              vector<vector<char> > &);
 void tokenize(string, vector<char> &);
-void printInit(vector<vector<char>>, vector<vector<char>>);
+void printInit(vector<vector<char> >, vector<vector<char> >);
 int min(int, int);
 
-extern vector<vector<char>> goal;
+extern vector<vector<char> > goal;
 extern int blocks;
 extern int tables;
 

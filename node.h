@@ -19,7 +19,7 @@ private:
   string backpath;
 
   /* The state of things. */
-  vector<vector<char>> state;
+  vector<vector<char> > state;
 
   /* The node that lead to here. */
   Node *parent;
@@ -39,9 +39,9 @@ private:
 public:
   // Constructors/Destructors
   Node();
-  Node(vector<vector<char>> s);
-  Node(vector<vector<char>> s, string path);
-  Node(vector<vector<char>> s, string path, Node p);
+  Node(vector<vector<char> > s);
+  Node(vector<vector<char> > s, string path);
+  Node(vector<vector<char> > s, string path, Node p);
   ~Node();
 
   // These are the accessor methods for the path information of this node.
@@ -52,8 +52,8 @@ public:
   void prettyPrint(int, bool, bool);
 
   /* Change or update this node's state.*/
-  void updateState(vector<vector<char>>);
-  vector<vector<char>> getState();
+  void updateState(vector<vector<char> >);
+  vector<vector<char> > getState();
 
   Node *getParent();
 
