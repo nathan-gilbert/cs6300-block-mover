@@ -1,6 +1,4 @@
-# CS 6300 - Artificial Intelligence
-## Assignment 1
-## February 13, 2007
+# Block Mover
 
 ## Preliminaries
 
