@@ -1,0 +1,5 @@
+# of tables: 6 
+INITIAL STATE
+table 2: A B C 
+GOAL STATE
+table 2: C B A

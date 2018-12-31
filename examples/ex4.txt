@@ -1,0 +1,10 @@
+# of tables: 5 
+INITIAL STATE
+table 1: A
+table 2: F
+table 3: A E
+table 4: B C
+table 5: F A
+GOAL STATE
+table 5: A E
+table 2: A 
